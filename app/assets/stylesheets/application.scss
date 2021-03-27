@@ -19,7 +19,6 @@
 $light-sage: #C6D2C6;
 $aubergine: #3C3545;
 $dark-sage: #4A6D51;
-$enable-responsive-font-sizes: true;
 
 body {
   // @include font-size(4rem);
@@ -65,4 +64,12 @@ a {
 
 a:hover {
   color: inherit;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 30%;
+  padding-top: 20px;
+  height: 0;
+  overflow: hidden;
 }
