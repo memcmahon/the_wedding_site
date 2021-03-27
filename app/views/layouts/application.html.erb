@@ -13,7 +13,24 @@
   </head>
 
   <body class="d-flex h-100 text-center">
-    <%= yield %>
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="mb-auto">
+        <div>
+          <h3 class="float-lg-start mb-0">Andy + Megan</h3>
+          <nav class="nav nav-masthead justify-content-center float-lg-end">
+            <%= link_to "The Wedding", '/thewedding', class: 'nav-link' %>
+            <a class="nav-link" href="#">The Location</a>
+            <a class="nav-link" href="#">The Gallery</a>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <%= yield %>
+      </main>
+      <footer class="mt-auto">
+        <p></p>
+      </footer>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
   </body>
 </html>
