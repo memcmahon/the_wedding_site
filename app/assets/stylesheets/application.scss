@@ -19,8 +19,10 @@
 $light-sage: #C6D2C6;
 $aubergine: #3C3545;
 $dark-sage: #4A6D51;
+$enable-responsive-font-sizes: true;
 
 body {
+  // @include font-size(4rem);
   font-family: 'Cuprum', sans-serif;
   background-color: $light-sage;
   color: $aubergine;
