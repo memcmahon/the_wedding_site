@@ -4,4 +4,7 @@ class WelcomeController < ApplicationController
 
   def wedding
   end
+
+  def gallery
+  end
 end
