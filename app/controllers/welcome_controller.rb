@@ -7,4 +7,7 @@ class WelcomeController < ApplicationController
 
   def gallery
   end
+
+  def location
+  end
 end
