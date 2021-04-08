@@ -1,18 +1,38 @@
-<div>
-  <div class="p-2 event-card">
-    <h1 class='event-title text-left'>where to stay</h1>
-    <p class='text-left'>We recommend staying near the Plaza. Room block information to come!</p>
+<main class='mb-auto text-left'>
+  <div>
+    <div class="p-2 event-card">
+      <h1 class='event-title'>where to stay</h1>
+      <p>We recommend staying near <%= link_to "The Plaza", "https://www.santafe.org/visiting-santa-fe/neighborhoods/plaza-and-downtown/", target: '_blank' %>. Room block information to come, but we like:</p>
+      <ul>
+        <p><%= link_to "The Drury Plaza Hotel", 'https://www.druryhotels.com/locations/santa-fe-nm/drury-plaza-hotel-in-santa-fe', target: '_blank' %></p>
+        <p><%= link_to "Inn on the Alameda", 'https://www.innonthealameda.com/', target: '_blank' %></p>
+      </ul>
+    </div>
+    <div class="p-2 event-card">
+      <h1 class='event-title'>places to eat</h1>
+      <p>New Mexico is home to some of Andy + Megan's favorite foods - sopapillas, blue corn enchiladas, green chile and biscochitos (the state cookie!). While you can't go wrong pretty much anywhere, some of our go-tos are:</p>
+      <ul>
+        <p><%= link_to "Maria's", "http://marias-santafe.com/", target: '_blank' %> - Great for margaritas! Megan's favorite spot for sopapillas, sweet and savory.</p>
+        <p><%= link_to "The Shed", "https://sfshed.com/", target: '_blank' %> and <%= link_to "La Choza", "http://www.lachozasf.com/", target: '_blank' %> - Sister restaurants, well known for traditional New Mexican dishes with garlic bread on the side!</p>
+        <p><%= link_to "The Burger Stand", "https://burgerstandnm.com/", target: '_blank' %> - Looking for a variety of local beers? This is your spot. </p>
+      </ul>
+    </div>
+    <div class="p-2 event-card">
+      <h1 class='event-title'>things to do</h1>
+      <p>There are SO MANY things to do in Santa Fe and the surrounding areas, here are a few starter ideas:</p>
+      <ul>
+        <p>Go for a hike or bike at <%= link_to 'Hyde Memorial State Park', 'http://www.emnrd.state.nm.us/SPD/documents/HydeTrailsGuide2pg_001.pdf', target: '_blank' %></p>
+        <p>Take in some history on a <%= link_to "Walking Tour", "https://historicwalksofsantafe.com/", target: '_blank' %></p>
+        <p>Visit the cliff dwellings at <%= link_to "Bandelier National Monument", "https://www.nps.gov/band/index.htm", target: '_blank' %></p>
+        <p>Find your zen at <%= link_to "Ten Thousand Waves", 'https://tenthousandwaves.com/', target: '_blank'%></p>
+        <p>Wander around <%= link_to "The Plaza", "https://www.santafe.org/visiting-santa-fe/neighborhoods/plaza-and-downtown/", target: '_blank' %> and <%= link_to "Canyon Road", "https://www.visitcanyonroad.com/", target: '_blank' %> - check out the galleries, shops, and especially the native artisans at the <%= link_to "Palace of the Governers", "https://www.nmhistorymuseum.org/programs/portal-artisans-program/", target: "_blank" %></p>
+      </ul>
+    </div>
+    <div class="p-2 event-card">
+      <h1 class='event-title'>stay hydrated</h1>
+      <p>Santa Fe sits high in the Sagre de Cristo foothills. Prepare for your trip by increasing your water intake prior to and during your trip!</p>
+    </div>
   </div>
-  <div class="p-2 event-card">
-    <h1 class='event-title text-left'>things to do</h1>
-    <p class='text-left'>Such fun things</p>
-  </div>
-  <div class="p-2 event-card">
-    <h1 class='event-title text-left'>places to eat</h1>
-    <p class='text-left'>All the sopapillas</p>
-  </div>
-  <div class="p-2 event-card">
-    <h1 class='event-title text-left'>stay hydrated</h1>
-    <p class='text-left'>Santa Fe is a high altitude city</p>
-  </div>
-</div>
+</main>
+<footer class='mt-auto'>
+</footer>
