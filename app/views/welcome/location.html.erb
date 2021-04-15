@@ -4,13 +4,11 @@
       <h1 class='event-title'>where to stay</h1>
       <p>We recommend staying near <%= link_to "The Plaza", "https://www.santafe.org/visiting-santa-fe/neighborhoods/plaza-and-downtown/", target: '_blank' %>. Room block information to come, but we like:</p>
       <ul>
-        <p><%= link_to "The Drury Plaza Hotel", 'https://www.druryhotels.com/locations/santa-fe-nm/drury-plaza-hotel-in-santa-fe', target: '_blank' %></p>
-          <ul>
-            <a data-bs-toggle="collapse" href="#druryBlock">Room Block Info</a>
-            <div class="collapse" id="druryBlock">
-              lskdjfsljd
-            </div>
-          </ul>
+        <p><%= link_to "The Drury Plaza Hotel", '#druryBlock', 'data-bs-toggle': 'collapse' %></p>
+        <div class="collapse text-center" id="druryBlock">
+          <p>Use <%= link_to "this link", 'https://www.druryhotels.com/bookandstay/newreservation/?groupno=2435144', target: '_blank' %> to book into our room block!</p>
+          <p>Visit the <%= link_to "Drury's site", 'https://www.druryhotels.com/locations/santa-fe-nm/drury-plaza-hotel-in-santa-fe', target: '_blank' %> for more information about the property.</p>
+        </div>
         <p><%= link_to "Inn on the Alameda", 'https://www.innonthealameda.com/', target: '_blank' %></p>
       </ul>
     </div>
