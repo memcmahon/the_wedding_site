@@ -10,4 +10,7 @@ class WelcomeController < ApplicationController
 
   def location
   end
+
+  def rsvp
+  end
 end

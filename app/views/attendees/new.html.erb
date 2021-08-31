@@ -1,0 +1,44 @@
+<main class="mb-auto">
+  <div class="d-grid gap-3">
+    <div class="p-2 event-card">
+      <h1 class='event-title fw-bolder'>RSVP</h1>
+      <p>Please Respond by September 24</p>
+    </div>
+    <div class="p-2 event-card">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+
+          </div>
+          <div class="col-11">
+            <%= form_with do |f| %>
+              <h4 class="event-title text-left">The Welcome Dinner</h4>
+              <div class="row text-left">
+                <div class="col-sm">
+                  <%= check_box_tag(:yes_welcome) %>
+                  <%= label_tag(:yes_welcome, "Yes to Frito Pie!") %>
+                </div>
+                <div class="col-sm">
+                  <%= check_box_tag(:no_welcome) %>
+                  <%= label_tag(:no_welcome, "There in spirit") %>
+                </div>
+              </div>
+              <br>
+              <h4 class="event-title text-left">The Wedding</h4>
+              <div class="row text-left">
+                <div class="col-sm">
+                  <%= check_box_tag(:yes_wedding) %>
+                  <%= label_tag(:yes_wedding, "Yes to Vows and Tequila!") %>
+                </div>
+                <div class="col-sm">
+                  <%= check_box_tag(:no_weding) %>
+                  <%= label_tag(:no_weding, "There in spirit") %>
+                </div>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
