@@ -1,44 +1,60 @@
 <main class="mb-auto">
   <div class="d-grid gap-3">
     <div class="p-2 event-card">
+      <p>
+        We are so excited to see you on our big day!
+        To keep everyone safe and healthy, we kindly request that all guests be fully vaccinated.
+        If you have any questions, or concerns, please reach out us!
+      </p>
+    </div>
+    <div class="p-2 event-card">
       <h1 class='event-title fw-bolder'>RSVP</h1>
       <p>Please Respond by September 24</p>
     </div>
     <div class="p-2 event-card">
       <div class="container">
-        <div class="row">
-          <div class="col">
+        <%= form_with do |f| %>
+          <div class="name-box">
+            <% f.label :names %>
+            <%= f.text_field :names, placeholder: 'Name(s)', class: 'name-box' %>
+          </div>
+          <br>
+          <div class="row text-left">
+            <div class="col-sm-1">
 
-          </div>
-          <div class="col-11">
-            <%= form_with do |f| %>
-              <h4 class="event-title text-left">The Welcome Dinner</h4>
-              <div class="row text-left">
-                <div class="col-sm">
-                  <%= check_box_tag(:yes_welcome) %>
-                  <%= label_tag(:yes_welcome, "Yes to Frito Pie!") %>
-                </div>
-                <div class="col-sm">
-                  <%= check_box_tag(:no_welcome) %>
-                  <%= label_tag(:no_welcome, "There in spirit") %>
-                </div>
+            </div>
+            <div class="col-sm">
+              <h4 class="event-title">The Welcome Dinner</h4>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="yesWelcome" name="welcome" class="custom-control-input" value='yes'>
+                <label class="custom-control-label" for="yesWelcome">Yes to Frito Pie!</label>
               </div>
-              <br>
-              <h4 class="event-title text-left">The Wedding</h4>
-              <div class="row text-left">
-                <div class="col-sm">
-                  <%= check_box_tag(:yes_wedding) %>
-                  <%= label_tag(:yes_wedding, "Yes to Vows and Tequila!") %>
-                </div>
-                <div class="col-sm">
-                  <%= check_box_tag(:no_weding) %>
-                  <%= label_tag(:no_weding, "There in spirit") %>
-                </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="noWelcome" name="welcome" class="custom-control-input" value='no'>
+                <label class="custom-control-label" for="noWelcome">There in spirit</label>
               </div>
-            <% end %>
+            </div>
+            <br>
+            <div class="col-sm">
+              <h4 class="event-title">The Wedding</h4>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="yesWedding" name="wedding" class="custom-control-input" value='yes'>
+                <label class="custom-control-label" for="yesWedding">Yes to Vows and Tequila!</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="noWedding" name="wedding" class="custom-control-input" value='no'>
+                <label class="custom-control-label" for="noWedding">There in spirit</label>
+              </div>
+            </div>
           </div>
-        </div>
+          <br>
+          <div class="text-center">
+            <%= f.submit 'Submit', class: 'btn btn-secondary'%>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>
 </main>
+<footer class='mt-auto'>
+</footer>

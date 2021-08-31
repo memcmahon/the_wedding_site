@@ -3,6 +3,6 @@ class AttendeesController < ApplicationController
   end
 
   def create
-    binding.pry
+    redirect_to '/thewedding'
   end
 end
