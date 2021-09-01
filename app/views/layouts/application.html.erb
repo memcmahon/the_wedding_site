@@ -16,6 +16,11 @@
   <body class="d-flex h-100 text-center">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
       <header class="mb-auto nav-border-bottom">
+        <% flash.each do |t, m| %>
+        <div class="link-border">
+          <%= m %>
+        </div>
+        <% end %>
         <div>
           <h3 class="float-lg-start mb-0">
             <%= link_to "Andy + Megan", '/', class: 'text-decoration-none' %>
