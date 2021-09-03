@@ -1,0 +1,16 @@
+<table>
+  <tr>
+    <th>names</th>
+    <th>Welcome</th>
+    <th>Wedding</th>
+  </tr>
+  <% @attendees.each do |attendee| %>
+  <tr>
+    <td><%= attendee.names %></td>
+    <td><%= attendee.welcome %></td>
+    <td><%= attendee.wedding %></td>
+  </tr>
+  <% end %>
+</table>
+<footer class='mt-auto'>
+</footer>

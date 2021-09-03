@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get '/thesantafe', to: 'welcome#location'
   get '/rsvp', to: 'attendees#new'
   post '/rsvp', to: 'attendees#create'
+  get '/attendees', to: 'attendees#index'
 end

@@ -1,4 +1,8 @@
 class AttendeesController < ApplicationController
+  def index
+    @attendees = Attendee.all
+  end
+
   def new
   end
 
